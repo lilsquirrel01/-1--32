@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Путешествия - Мой блог</title>
+    <style>
+        /* Задание: Шрифт без засечек */
+        body {
+            font-family: sans-serif;
+            margin: 0; /* Убираем стандартные отступы body */
+            padding: 0;
+        }
+
+        /* Задание: Шапка */
+        header {
+            background-color: #f0f0f0; /* Задание: Цвет фона */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Стили для логотипа в шапке */
+        header img {
+            max-width: 150px; /* Ограничиваем размер логотипа */
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        /* Задание: Подвал */
+        footer {
+            background-color: #f0f0f0; /* Задание: Цвет фона */
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px; /* Отступ сверху */
+        }
+
+        /* Задание: Основной заголовок */
+        h1 {
+            font-size: 50px; /* Задание: Размер 50px */
+            text-align: center; /* Задание: Выравнивание по центру */
+            color: #333; /* Задание: Цвет текста */
+            margin-bottom: 30px; /* Добавляем отступ снизу */
+        }
+
+        /* Задание: Подзаголовки */
+        h2 {
+            font-size: 40px; /* Задание: Размер 40px */
+            color: #555; /* Задание: Цвет текста */
+            margin-top: 40px; /* Добавляем отступ сверху */
+            margin-bottom: 20px; /* Добавляем отступ снизу */
+        }
+
+        /* Задание: Абзацы текста */
+        p {
+            font-size: 20px; /* Задание: Размер текста 20px */
+            line-height: 1.6; /* Улучшаем читаемость текста */
+            margin-bottom: 15px; /* Отступ между абзацами */
+            color: #444; /* Задание: Цвет текста */
+        }
+
+        /* Задание: Стили для ссылок */
+        a {
+            color: #007bff; /* Задание: Цвет */
+            text-decoration: none; /* Убираем подчеркивание по умолчанию */
+            font-size: 18px; /* Задание: Размер текста ссылок */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
+
+        /* Стили для изображений (чтобы не были слишком большими) */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto; /* Центрируем изображения и добавляем отступы */
+        }
+
+        /* Стили для основной информации */
+        main {
+            padding: 20px;
+            max-width: 960px; /* Ограничиваем ширину основного контента */
+            margin: 20px auto; /* Центрируем основной контент */
+        }
+
+        /* Стили для таблицы (Задание: Цвет фона, размер текста, границы) */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            background-color: #fff; /* Задание: Цвет фона */
+            font-size: 20px; /* Задание: Размер текста в ней 20px */
+            border: 1px solid #ccc; /* Задание: Границы */
+        }
+        th, td {
+            border: 1px solid #ccc; /* Задание: Границы */
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #e9e9e9;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Стили для формы */
+        form {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: calc(100% - 22px); /* Ширина с учетом padding и border */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Задание: Логотип -->
+        <img src="https://i.pinimg.com/736x/ec/ec/6e/ecec6eee52d5aac7280beb3aa3501781.jpg" alt="Логотип туристической компании">
+        <h1>Путешествия по миру</h1>
+        <!-- Задание: Ссылки на разделы сайта -->
+        <nav>
+            <a href="#interesting-facts">Интересные факты</a> |
+            <a href="#destinations">Популярные направления</a> |
+            <a href="#feedback-form">Оставить отзыв</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Задание: Основная информация -->
+        <section>
+            <h2 id="interesting-facts">Интересные факты о путешествиях</h2>
+            <!-- Задание: Текст для сайта, Жирный/курсивный, Переносы строк -->
+            <p>Путешествия открывают новые горизонты и позволяют узнать много нового о мире и о себе. Это <strong>уникальный опыт</strong>, который обогащает нашу жизнь. Каждое путешествие — это <em>новое приключение</em>.</p>
+
+            <p>Знаете ли вы, что <a href="https://ru.wikipedia.org/wiki/Великая_Китайская_стена" target="_blank">Великая Китайская стена</a> видна из космоса? Это один из самых удивительных фактов о рукотворных сооружениях на Земле.<br>А вот еще один факт: Самая высокая точка на Земле над уровнем моря — это гора <a href="https://ru.wikipedia.org/wiki/Джомолунгма" target="_blank">Эверест</a>.</p>
+
+            <!-- Задание: Картинки -->
+            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Красивое место для путешествий">
+        </section>
+
+        <section>
+            <h2 id="destinations">Популярные направления</h2>
+            <!-- Задание: Таблица по теме сайта -->
+            <table>
+                <caption>Топ-5 стран для посещения</caption>
+                <thead>
+                    <tr>
+                        <th>Место</th>
+                        <th>Описание</th>
+                        <th>Лучшее время для посещения</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Италия</td>
+                        <td>Богатая история, вкусная еда, красивые города.</td>
+                        <td>Весна или осень</td>
+                    </tr>
+                    <tr>
+                        <td>Япония</td>
+                        <td>Сочетание древних традиций и современных технологий.</td>
+                        <td>Весна (цветение сакуры) или осень</td>
+                    </tr>
+                    <tr>
+                            <td>Новая Зеландия</td>
+                            <td>Потрясающие природные ландшафты, приключения.</td>
+                            <td>Лето (декабрь-февраль)</td>
+                        </tr>
+                        <tr>
+                            <td>Канада</td>
+                            <td>Огромные национальные парки, дружелюбные города.</td>
+                            <td>Лето или осень (золотая листва)</td>
+                        </tr>
+                        <tr>
+                            <td>Швейцария</td>
+                            <td>Живописные горы, озера, города.</td>
+                            <td>Круглый год (лыжи зимой, походы летом)</td>
+                        </tr>
+                </tbody>
+            </table>
+             <!-- Задание: Картинки -->
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Карта и компас">
+        </section>
+
+        <!-- Задание: Форма обратной связи или форма отзыва -->
+        <section id="feedback-form">
+            <h2>Оставить отзыв о путешествии</h2>
+            <form action="/submit-feedback" method="post"> <!-- action и method для примера -->
+                <div>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="feedback">Ваш отзыв:</label>
+                    <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                </div>
+                <button type="submit">Отправить отзыв</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Задание: Контактная информация -->
+        <p>Выдуманный адрес: ул. Путешественников, д. 10, г. Воображаемый</p>
+        <p>Телефон: +1 123 456 7890</p>
+        <!-- Задание: Ссылка на социальную сеть -->
+        <p>
+            Мы в соцсетях:
+            <a href="https://www.example.com/social" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Логотип Instagram" style="display: inline-block; vertical-align: middle; width: 30px; height: 30px;">
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html> 
